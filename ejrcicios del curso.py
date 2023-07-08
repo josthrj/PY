@@ -31,14 +31,24 @@ print(email)
 #multiples variables 
 name, age, city = "Jose",  26,"Boston D.C"
 
-print('name,age,city')
+print(name,age,city) #para que pueda imprimor el texto de las variables se hace sin la comillas
 
 a, b, c = 'a1', 'b2','c3'
 
-print('a,b,c')
+print(a,b,c)#correcto
 
 a1 = '1'
 b2 = '2'
 c3 = '3'
 
-print   ('a1', 'b2', 'c3')
+print   ('a1', 'b2', 'c3')#incorrecto
+print (a1,b2,c3) #correcto
+#concatenacion: El proceso es simple e implica vincular dos o más cadenas en secuencia, generalmente usando el operador '+'
+
+inicio = 'hola'
+final = 'mundo'
+
+print (inicio + final)
+
+
+
