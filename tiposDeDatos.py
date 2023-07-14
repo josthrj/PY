@@ -58,7 +58,8 @@ largoMi_list = len(mi_list)
 #accedidiendo a los elementos de las listas
 print(mi_list[0])
 
-
+mi_list.pop()
+print(mi_list)
 
 
 
