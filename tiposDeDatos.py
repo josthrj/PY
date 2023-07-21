@@ -58,25 +58,130 @@ largoMi_list = len(mi_list)
 #accedidiendo a los elementos de las listas
 print(mi_list[0])
 
-mi_list.pop()
+mi_list.pop()#elimina el ultimo elemento
 print(mi_list)
 
 
+mi_list.remove('dos')#elimina un elemento en especifico
+print(mi_list)
+
+#ordenar y modificar la lista 
+#mi_list.sort()   #ordena alfabeticamente, pero tienen que ser del mismo tipo de datos 
+#mi_list.reverse() #ordena de atras para frente
+
+#tuplas: no pueden modificarse 
+
+tupla = ('hola','mundo','somos','una','tupla')
+
+print(tupla)
+
+#tupla.count >>> igual que en las listas
+#tupla.index >>> devuelve la pocision de donde encontro un elemento especificado
+
+#como las tuplas no pueden modificarse para ello deben convertirse en listas
+
+#listaDeTupla = list(tupla)
+
+
+#listaDeTupla.append('hola')
+
+#print(listaDeTupla)
+
+#range
+rangoNumeros = range (6)#genera una secuencia desde cero hasta
+
+print(rangoNumeros)
+
+
+
+#diccionarios
+diccionario = {
+    'nombre': "Angola",    #importante colocar la coma al final
+    "capital": "Berlin",
+    "edad": 24
+    }   #se comienz con corchetes, se debe colocar la exprecion entre comillas
+        #se debe colocar coma al final del texto indicado
+        #numeros pueden ingresarse sin comillas
+
+
+print(diccionario)
+
+#del diccionario['edad']     #borra un campo especifica por su nombre
+print(diccionario['capital'])
+
+
+print(diccionario.get('capital'))  #accede al valor que se le especifica
+
+diccionario['nombre'] = 'Alemania' #cambia valor de un dato del diccionario en este caso debe especificar cual va a cambiar
+
+print(len(diccionario))#medir la longitud de un elemento en este caso el diccionario
+
+
+diccionario['estado'] = 'sajonia'
+
+#for key in diccionario:      #imprimiendo los elementos uno a uno
+
+#print(diccionario)
+
+#diccionario.pop('estado') #elimina un valor de nuestro diccionario
+diccionario.popitem()#elimina el ultimo valor que se agrego
+#copiaDiccionario = diccionario.copy()   #crea una copia de un diccionario
+copiaDiccionario = dict(diccionario)     #crea una copia de un diccionario
+
+#print(diccionario,copiaDiccionario)
+
+#diccionario.clear()
+#print(diccionario)
+
+
+#DICCIONARIOS ANIDADOS
+
+datosDiccionario =  {
+    "carros": {
+    "topic": "van",
+    "marca": "kia"
+    },
+    "motos":{
+        "fazer":"scooter",
+        "marca": "honda"
+        }
+
+    }
 
 
 
 
+print(datosDiccionario)
 
 
+#ejecutando de otra forma
+
+carros = {
+    "fiat":"punto",
+    "motor":"simple"       
+    }
+motores={
+    "ocho":"complejo",
+    "cuatro":"simple",
+    }
+
+datosDelSegundoDicc = {
+    "carros":carros,
+    "motores": motores, #como es una variable debe colocarse sin comillas
+    }
+
+print(datosDelSegundoDicc)
+
+carrosAntiguos = dict(nombre = "kombi", marca = "volskswagen") #construcctor de dict
+print(carrosAntiguos)
+
+#todas las formas anteriores de alteracion de datos son validas la forma de trabajar de la organizacion en la que estemos dira cuales son las que debemos seguir segun los parametros usados
 
 
+#BOOLEANOS #utiles para trabajar con control de flujo
 
 
+verdadero = True
+falso = False
 
-
-
-
-
-
-
-
+print(verdadero,falso)
